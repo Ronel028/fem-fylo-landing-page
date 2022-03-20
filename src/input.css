@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    .wrapper{
+        @apply max-w-[1285px] mx-auto w-[90%]
+    }
+    a{ 
+        @apply text-pColor font-railway font-normal text-base capitalize
+    }
+    a.nav-links{
+        @apply hover:text-White hover:underline mobileLg:text-[14px] mobile:text-[13px]
+    }
+    a.footer-links{
+        @apply hover:text-White
+    }
+    a.btn{
+        @apply bg-Blue rounded-[50px]
+    }
+    h4{
+        @apply text-White font-railway font-bold text-base mb-[14px]
+    }
+    p.features{
+        @apply text-pColor font-openSans font-normal text-[14px] max-w-[339px] tabletMD:text-[13px]
+    }
+    p.testimonial-list{
+        @apply text-pColor font-railway font-normal text-[14px] pb-[24px]
+    }
+    div.image{
+        @apply w-[28px] h-[28px] rounded-full
+    }
+    div.profile{
+        @apply flex items-center gap-4
+    }
+    .card{
+        @apply bg-DarkBlue4 px-[26px] pt-[44px] pb-[20px] rounded-md w-[359px] shadow-md
+    }
+}
+
+header{
+    background:url('../images/bg-curvy-desktop.svg'), hsl(219, 30%, 18%);
+    background-size: contain cover;
+    background-position: bottom center;
+    background-repeat: no-repeat no-repeat;
+    
+}
+@media screen and (max-width:370px) {
+    header{
+        background:url('../images/bg-curvy-mobile.svg'), hsl(219, 30%, 18%);
+        background-size: 192% 49%;
+        background-position: 52% 102%;
+        background-repeat: no-repeat no-repeat;
+    }
+}
+
+section.testimonials-section{
+    background: hsl(218, 28%, 13%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* @media screen and (max-width: 1258px){
+    section.testimonials-section{
+        background-position: top 6% left 19%;
+    }
+} */
+
+a,button{
+    transition: all 200ms ease-out;
+}
+a.productive-links::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(176, 68%, 64%);
+   
+}
+a.productive-links:hover{
+    color: hsl(0, 0%, 100%);
+}
+a.productive-links:hover::after{
+    background-color: hsl(0, 0%, 100%);
+}
+a.productive-links:hover use{
+    fill: white;
+}
+
+.btnHov:hover{
+    background-color: hsl(198deg, 47%, 57%);
+}
+
+.social-media-links{
+    transition: all 200ms ease-out;
+}
+.social-media-links:hover{
+    border-color: hsl(176, 68%, 64%);
+}
+.social-media-links:hover a{
+    color: hsl(176, 68%, 64%);
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+
+</head>
+<body>
+
+    <header class="w-full pt-[66px] pb-[40px]">
+      <div class="wrapper">
+          <nav class="flex justify-between items-center mb-[71px]">
+             <div class="logo h-[53px] mobileLg:h-[45px] mobileMd:h-[33px] mobile:h-[27px]">
+                 <img src="./images/logo.svg" alt="logo" class="h-full">
+             </div>
+
+             <div class="nav-links">
+                 <ul class="flex gap-5 mobileMd:gap-3">
+                     <li><a href="#" class="nav-links">features</a></li>
+                     <li><a href="#" class="nav-links">team</a></li>
+                     <li><a href="#" class="nav-links">sign in</a></li>
+                 </ul>
+             </div>
+          </nav>
+
+          <!-- hero section -->
+          <div class="hero flex flex-col items-center gap-8 text-center">
+               <div class="hero-image">
+                   <img src="./images/illustration-intro.png" alt="">
+               </div>
+               <div class="hero-title flex flex-col items-center">
+                   <h1 class="text-White text-[36px] font-railway font-bold mb-[48px] max-w-[674px] mobile:text-[24px] mobile:mb-[25px]">
+                       All your files in one secure location, accessible anywhere.
+                   </h1>
+                   <p class="text-pColor font-railway font-normal text-[18px] mb-[35px] max-w-[560px] mobile:text-[13px]">
+                      Fylo stores all your mose important files in one secure location, Access them wherever your need,
+                      share and collaborate with friends family and co-workers
+                   </p>
+                   <a href="#" class="btn btnHov font-bold bg-Blue py-[15px] px-[96px] mobile:py-[11px] mobile:px-[72px] mobile:text-[14px]">
+                     get started
+                   </a>
+               </div>
+          </div>
+      </div>
+    </header>
+
+    <!-- features -->
+    <section class="bg-DarkBlue2 pb-[36px] pt-[100px]">
+        <div class="features-container w-[90%] max-w-[875px] mx-auto">
+            <div class="features grid grid-cols-2 gap-x-8 gap-y-[7.5rem] text-center tablet:grid-cols-1">
+
+                    <div class="access-files flex flex-col items-center">
+                        <div class="logo mb-[28px]">
+                            <img src="./images/icon-access-anywhere.svg" alt="acces icon">
+                        </div>
+                        <h4>
+                          Access your files, anywhere
+                        </h4>
+                        <p class="features">
+                            The ability to use smartphone, tablet or computer to access your account means
+                            your files follow you everywhere.
+                        </p>
+                    </div>
+
+                    <div class="secure-files flex flex-col items-center">
+                        <div class="logo mb-[17px]">
+                            <img src="./images/icon-security.svg" alt="security icon">
+                        </div>
+                        <h4>
+                            Security you can trust
+                        </h4>
+                        <p class="features">
+                            2-factor authentication and user controlled encryption are just a couple of the security features
+                            we allow to help secure your files.
+                        </p>
+                  </div>
+
+                  <div class="collab-files flex flex-col items-center">
+                      <div class="logo mb-[28px]">
+                          <img src="./images/icon-collaboration.svg" alt="collab icon">
+                      </div>
+                      <h4>
+                          Real-time collaboration
+                      </h4>
+                      <p class="features">
+                          securely share files and folders with friends, family and colleagues for live collaboration.
+                          No email attachments required.
+                      </p>
+                  </div>
+
+                  <div class="store-files flex flex-col items-center">
+                    <div class="logo mb-[28px]">
+                        <img src="./images/icon-any-file.svg" alt="store file icon">
+                    </div>
+                    <h4>
+                        Store any type of file
+                    </h4>
+                    <p class="features">
+                        Whether you're  sharing holidays photos or work document, Fylo has you covered allowing for
+                        all file types to be securely stored and shared.
+                    </p>
+                </div>
+
+            </div>
+        </div>        
+    </section>
+
+    <!-- fylo works -->
+    <section class="bg-DarkBlue2 pt-[79px] pb-[100px]">
+         <div class="wrapper">
+              <div class="productive flex items-center gap-16 tabletMD:flex-wrap">
+
+                  <div class="productive-image tabletMD:w-full tabletMD:flex tabletMD:justify-center">
+                       <img src="./images/illustration-stay-productive.png" alt="">
+                  </div>
+
+                  <div class="productive-content">
+                      <h1 class="text-White text-[36px] font-railway font-bold mb-[19px] max-w-[312px] mobile:text-[19px] tabletMD:text-[22px]">
+                          Stay productive, wherever you are 
+                      </h1>
+                      <p class="text-pColor font-openSans font-normal text-[14px] mb-[14px] max-w-[511px] tabletMD:text[13px]">
+                          Never let a location be an issue when accessing your files, Fylo has you covered for all 
+                          of your file storage needs.
+                      </p>
+                      <p class="text-pColor font-openSans font-normal text-[14px] mb-[26px] max-w-[511px] tabletMD:text[13px]">
+                          Securely share files and folders with friends, family and colleagues for live collaboration.
+                          No email attachment required.
+                      </p>
+                      <div class="flex items-center">
+                          <a href="#" class="productive-links flex items-center gap-3 text-Cyan text-[14px] font-railway font-normal relative mobile:text-[11px]">
+                               See how Fylo works 
+                               <span class="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg>
+                               </span>
+                          </a>
+                          
+                      </div>
+                      
+                  </div>
+
+              </div>
+
+         </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="testimonials-section pt-[79px] pb-[324px] relative z-0">
+         <div class="wrapper">
+              <div class="testimonial-contaner flex flex-wrap justify-center gap-7">
+                    
+                   <div class="card satish relative">
+                        <div class="qoute-logo absolute left-[-7%] top-[-17%] z-[-1] mobileLg:left-[4%] mobileMd:w-[38px] mobileMd:top-[-12%]">
+                            <img src="./images/bg-quotes.png" alt="" class="w-full">
+                        </div>
+                       <p class="testimonial-list">
+                        Fylo has improve our team productivity by an order of magnitude. Since making
+                        the switch our team has become a well-oiled collaboration machine.
+                       </p>
+                       <div class="profile">
+                           <div class="image">
+                               <img src="./images/profile-1.jpg" alt="Satish Patel" class="w-full rounded-full">
+                           </div>
+                           <div class="position">
+                               <p class="text-[10px] text-White font-railway font-bold">
+                                   Satish Patel
+                               </p>
+                               <p class="text-[9px] text-pColor font-railway font-normal">
+                                   Founder & CEO, Huddle
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="card Bruce">
+                        <p class="testimonial-list">
+                            Fylo has improve our team productivity by an order of magnitude. Since making
+                            the switch our team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./images/profile-2.jpg" alt="Bruce McKenzie" class="w-full rounded-full">
+                            </div>
+                            <div class="position">
+                                <p class="text-[10px] text-White font-railway font-bold">
+                                    Bruce McKenzie
+                                </p>
+                                <p class="text-[9px] text-pColor font-railway font-normal">
+                                    Founder & CEO, Huddle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card Iva">
+                        <p class="testimonial-list">
+                            Fylo has improve our team productivity by an order of magnitude. Since making
+                            the switch our team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./images/profile-3.jpg" alt="Iva Boyd" class="w-full rounded-full">
+                            </div>
+                            <div class="position">
+                                <p class="text-[10px] text-White font-railway font-bold">
+                                    Iva Boyd
+                                </p>
+                                <p class="text-[9px] text-pColor font-railway font-normal">
+                                    Founder & CEO, Huddle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+              </div>
+         </div>
+
+         <section class="early-access bg-DarkBlue1 w-[70%] tabletSm:w-[90%] pt-[48px] pb-[37px] px-[75px] mobileMd:px-[36px] absolute bottom-[-150px] left-1/2 translate-x-[-50%] shadow-xl rounded-md z-20">
+            <div class="flex flex-col items-center text-center">
+                <div class="early-access-text">
+                    <h2 class="text-White text-[35px] font-railway font-bold mb-[21px] tablet:text-[22px]">
+                        Get early access today
+                    </h2>
+                    <p class="text-pColor text-[14px] font-railway font-normal max-w-[619px] mb-[37px] tablet:text-[13px]">
+                        It only takes a minute to sign up and our free starter tier is extremely generous, If you have any
+                        questions, our support team would be happy to help you.
+                    </p>
+              </div>
+    
+               <div class="input-field w-full max-w-[714px] flex items-center justify-between tabletSm:flex-col relative">
+                   <p id="errorEmail" class="text-LightRed text-[10px] font-railway font-normal hidden absolute bottom-[-37%] left-[37px] tabletSm:bottom-[44%]">
+                       Please enter a valid email address
+                   </p>
+                   <input type="email" placeholder="email@example.com" required id="inputEmail" class="py-[13px] px-[39px] w-[65%] rounded-[50px] outline-0 desktopSm:w-[58%] tabletSm:w-[100%] tabletSm:mb-[26px] tablet:py-[9px]" >
+                   <button id="btn-submit" class="bg-Blue btnHov rounded-[50px] py-[15px] px-[40px] text-White text-[12px] font-railway font-bold desktop:px-[19px] tabletSm:w-[100%] tablet:py-[11px]">
+                       Get Started For Free
+                    </button>
+               </div>
+            </div>
+              
+              
+        </section>
+    </section>
+
+
+
+    <footer class="pt-[201px] pb-[79px] bg-DarkBlue4">
+          <div class="wrapper">
+              <div class="footer-content">
+
+                  <div class="footer-logo mb-[34px]">
+                      <img src="./images/logo.svg" alt="Logo">
+                  </div>
+
+                  <div class="footer-info flex justify-between tabletXmd:flex-col tabletXmd:gap-10">
+                      <div class="contact-info flex flex-wrap gap-7">
+
+                          <!-- location -->
+                            <div class="location flex gap-4">
+                                <div class="location-logo mt-[7px]">
+                                    <img src="./images/icon-location.svg" alt="location" class="max-w-none">
+                                </div>                          
+                                <p class="max-w-[326px] text-[14px] text-pColor font-openSans font-normal">
+                                    Lorem ipsum dolor set amet, consectitur adipiscing elit,
+                                    sed to eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua 
+                                </p>
+                            </div>
+
+                            <!-- contact -->
+                            <div class="contact-info flex flex-col gap-5">
+                                <div class="phone flex items-center gap-6">
+                                    <div class="phone-logo">
+                                        <img src="./images/icon-phone.svg" alt="Phone">
+                                    </div>
+                                    <p class="text-[14px] text-pColor font-openSans font-normal">                            
+                                        +1-543-123-4567
+                                    </p>
+                                </div>
+                                <div class="email flex items-center gap-6">
+                                    <div class="email-logo">
+                                        <img src="./images/icon-email.svg" alt="">
+                                    </div>
+                                    <p class="text-[14px] text-pColor font-openSans font-normal">
+                                        example@fylo.com
+                                    </p>
+                                </div>
+                                
+                            </div>
+                      </div>
+                      
+                      
+
+                      <!-- footer links -->
+                      <div class="footer-links flex gap-8 mobileMd:flex-col">
+                           <ul class="flex flex-col gap-4">
+                               <li><a href="#" class="footer-links">About us</a></li>
+                               <li><a href="#" class="footer-links">Jobs</a></li>
+                               <li><a href="#" class="footer-links">Press</a></li>
+                               <li><a href="#" class="footer-links">Blog</a></li>
+                           </ul>
+                           <ul class="flex flex-col gap-4">
+                                <li><a href="#" class="footer-links">Contact Us</a></li>
+                                <li><a href="#" class="footer-links">Terms</a></li>
+                                <li><a href="#" class="footer-links">Privacy</a></li>
+                           </ul>
+                      </div>
+
+                      <!-- social media links -->
+                      <div class="social-media flex items-start gap-4 desktopMd:flex-col mobileLg:flex-row mobileMd:justify-center">
+                          <div class="social-media-links facebook w-[31px] h-[31px] flex items-center justify-center p-3 border-[1px] border-White border-solid rounded-full">
+                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                          </div>
+                          <div class="social-media-links twitter w-[31px] h-[31px] flex items-center justify-center p-3 border-[1px] border-White border-solid rounded-full">
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                          </div>
+                          <div class="social-media-links instagram w-[31px] h-[31px] flex items-center justify-center p-3 border-[1px] border-White border-solid rounded-full">
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+    </footer>
+    
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="./script/app.js"></script>
+</body>
+</html>
